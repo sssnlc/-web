@@ -1,0 +1,71 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      div {
+        height: 200px;
+        width: 600px;
+        margin: 100px auto;
+        border: 2px solid black;
+        overflow: hidden;
+      }
+
+      li {
+        list-style-type: none;
+        float: left;
+        height: 100%;
+        width: 200px;
+      }
+
+      ul {
+        width: 1800px;
+        animation: move 5s infinite;
+      }
+
+      img {
+        height: 200px;
+        width: 100%;
+      }
+
+      @keyframes move {
+        to {
+          transform: translateX(-1200px);
+        }
+      }
+
+      div:hover ul {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <ul>
+        <li><img src="./img/1.jpg" alt=""></li>
+        <li><img src="./img/2.jpg" alt=""></li>
+        <li><img src="./img/3.jpg" alt=""></li>
+        <li><img src="./img/4.jpg" alt=""></li>
+        <li><img src="./img/5.jpg" alt=""></li>
+        <li><img src="./img/6.jpg" alt=""></li>
+
+        <!-- 实现无缝 -->
+        <li><img src="./img/1.jpg" alt=""></li>
+        <li><img src="./img/2.jpg" alt=""></li>
+        <li><img src="./img/3.jpg" alt=""></li>
+      </ul>
+    </div>
+  </body>
+
+  </html>

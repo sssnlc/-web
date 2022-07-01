@@ -1,0 +1,65 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      height: 30px;
+      width: 700px;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .one>li {
+      height: 30px;
+      width: 100px;
+      background-color: green;
+      float: left;
+    }
+
+    .two>li {
+      height: 30px;
+      width: 100px;
+      background-color: pink;
+      float: left;
+    }
+
+    .two {
+      position: absolute;
+      top: -16px;
+      left: 0;
+      transform: translateZ(200px);
+    }
+
+    li:hover {
+      transition: all .5s;
+      transform: rotateX(360deg);
+    }
+  </style>
+
+  <body>
+    <div>
+      <ul class="one">
+        <li>首页</li>
+        <li>登录</li>
+        <li>注册</li>
+      </ul>
+      <ul class="two">
+        <li>main</li>
+        <li>login</li>
+        <li>resign</li>
+      </ul>
+    </div>
+  </body>
+
+  </html>

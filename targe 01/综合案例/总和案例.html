@@ -1,0 +1,101 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+      height: 200px;
+      width: 380px;
+      margin-right: 20px;
+      float: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .content {
+      height: 200px;
+      width: 1200px;
+      margin: 30px auto;
+    }
+
+    img {
+      height: 200px;
+      width: 380px;
+      transition: all 0.3s;
+    }
+
+    p {
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+      transition: all 0.3s;
+    }
+
+    .shadow {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .5s;
+    }
+
+    /* 放上去后img的变化 */
+    li:hover img {
+      transform: scale(1.2);
+    }
+
+    li:hover p {
+      transform: translateY(-20px);
+    }
+
+    li:hover .shadow {
+      background-image: linear-gradient(transparent, rgb(0, 0, 0, 0.4));
+    }
+  </style>
+
+  <body>
+    <div class="content">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./img/huawei1.jpeg" alt="">
+            <p>111111111111111111111111111111</p>
+          </a>
+          <div class="shadow"></div>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/huawei2.jpeg" alt="">
+            <p>111111111111111111111111111111</p>
+          </a>
+          <div class="shadow"></div>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/product.jpeg" alt="">
+            <p>111111111111111111111111111111</p>
+          </a>
+          <div class="shadow"></div>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+  </html>

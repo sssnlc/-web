@@ -1,0 +1,62 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      height: 200px;
+      width: 400px;
+      overflow: hidden;
+      margin-left: 40%;
+      margin-top: 15%;
+      position: relative;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    p {
+      height: 50px;
+      width: 400px;
+      position: absolute;
+      top: 75%;
+      left: 20%;
+    }
+
+    .msk {
+      height: 200px;
+      width: 400px;
+      /* background-color: aquamarine; */
+      position: absolute;
+      top: -30%;
+      left: -40%;
+      transition: all 0.7s;
+    }
+
+    div:hover .msk {
+      background-image: linear-gradient(transparent, rgb(0, 0, 0, 0.3));
+    }
+
+    /* .box:hover div::after {
+      background-image: linear-gradient(transparent, rgb(0, 0, 0, 0.7));
+      background-color: aqua;
+    } */
+  </style>
+
+  <body>
+    <div class="box">
+      <img src="./img/product.jpeg" alt="">
+      <p>嘟嘟嘟嘟嘟嘟嘟嘟嘟嘟嘟。。。。</p>
+      <div class="msk"></div>
+    </div>
+  </body>
+
+  </html>

@@ -1,0 +1,50 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        height: 140px;
+        width: 140px;
+        background-repeat: no-repeat;
+        background-image: url('./img/bg.png');
+        animation: chang 0.5s steps(12) infinite, yidong 5s forwards;
+      }
+
+      /* div:hover {
+        animation-play-state: paused;
+      } */
+
+      @keyframes chang {
+        from {
+          background-position: 0 0;
+        }
+
+        to {
+          background-position: -1680px 0;
+        }
+      }
+
+      @keyframes yidong {
+        from {
+          transform: translate(0);
+        }
+
+        to {
+          transform: translateX(1000px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+    </div>
+  </body>
+
+  </html>
