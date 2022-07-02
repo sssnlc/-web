@@ -1,0 +1,191 @@
+.content {
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+
+}
+
+a:hover {
+    border-bottom: 2px solid skyblue;
+    border-radius: 2px;
+}
+
+/* 公共属性 */
+.public {
+    margin: 17pt 0;
+    padding: 28px 19px;
+}
+
+/* 版心 */
+.content .wrapper {
+    display: flex;
+}
+
+/* 个人信息 */
+.person {
+    width: 222px;
+    min-height: 500px;
+    background-color: pink;
+    margin-right: 19px;
+}
+
+/* 分类 */
+.classfiy {
+    flex: 1;
+    min-height: 500px;
+}
+
+/* 个人配置 */
+.classfiy .set {
+    height: 132px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 80px;
+    display: flex;
+    text-align: center;
+}
+
+.classfiy .set1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    border-right: 1px solid rgb(244, 244, 244);
+}
+
+.set img {
+    height: 25px;
+    margin-bottom: 22px;
+}
+
+.classfiy .set2 {
+    width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.classfiy .set2 a p:first-child {
+    font-size: 25pt;
+    color: rgb(224, 94, 48);
+
+}
+
+.classfiy .set2 a p {
+    margin-bottom: 8px;
+}
+
+/* 我的订单 */
+.order {
+    /* height: 392px; */
+    width: 100%;
+    background-color: #fff;
+}
+
+/* 第一行 */
+.order>div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order>div:first-child h2 {
+    font-size: 22pt;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+}
+
+.order>div:first-child a {
+    font-size: 16pt;
+    color: rgb(153, 153, 153);
+    height: 45px;
+    border-bottom: 1px solid rgb(244, 244, 244);
+}
+
+/* 第二行 */
+.order li {
+    height: 137px;
+    border: 1px solid #f4f4f4;
+    margin-top: -1px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.order li:last-child {
+    margin-bottom: 0;
+
+}
+
+.order li .foods {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.order li .foods .pic {
+    height: 107px;
+    width: 107px;
+}
+
+.order li .text {
+    position: relative;
+    left: -25px;
+    font-size: 16pt;
+    color: rgb(51, 51, 51);
+}
+
+.order li .text p {
+    font-size: 14pt;
+    color: rgb(153, 153, 153);
+}
+
+.order li .status {
+    position: relative;
+    left: -20px;
+    font-size: 14pt;
+    color: rgb(224, 94, 48);
+}
+
+
+.order li .pay {
+    width: 198px;
+    border-left: 0.3px solid rgb(232, 232, 232);
+    border-right: 0.3px solid rgb(232, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order li .pay p:first-child {
+    font-size: 14pt;
+    color: rgb(154, 46, 31);
+}
+
+.order li .pay p:nth-child(2),
+.order li .pay p:nth-child(3) {
+    color: rgb(51, 51, 51)
+}
+
+.order li .action {
+    width: 179px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.order li .action a {
+    width: 100pt;
+    height: 30pt;
+    border-radius: 2pt;
+    background-color: #5eb69c;
+    line-height: 30pt;
+    margin-bottom: 10px;
+    color: #ffffff;
+}

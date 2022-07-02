@@ -1,0 +1,55 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    div:nth-child(1) {
+      height: 100px;
+      width: 1000px;
+      border: 1px solid;
+      /* 变成flex布局 */
+      display: flex;
+      /* 主轴中心对齐 */
+      justify-content: center;
+      /* 子元素盒子两者之间距离相等 对齐 */
+      justify-content: space-between;
+      /* 子元素周围距离都相等 对齐*/
+      justify-content: space-around;
+      /* 子元素均匀对齐 */
+      justify-content: space-evenly;
+    }
+
+    div>div:nth-of-type(1) {
+      height: 100px;
+      width: 200px;
+      background-color: pink;
+    }
+
+    div>div:nth-of-type(2) {
+      height: 100px;
+      width: 200px;
+      background-color: skyblue;
+    }
+
+    div>div:nth-of-type(3) {
+      height: 100px;
+      width: 200px;
+      background-color: aqua;
+    }
+  </style>
+
+  <body>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+
+  </html>
