@@ -1,0 +1,163 @@
+// 轮播图响应式图片处理
+.carousel {
+
+    // 我们后面设置盒子大小，让图片跟着走，用权重最高导入
+    img {
+        height: 100% !important;
+    }
+
+    // 把响应式列出来
+    // 992以下  400px  
+    // 767以下  250px
+    // 992以上 500
+
+    @media (max-width:992px) {
+        .item {
+            height: 400px;
+        }
+    }
+
+    @media (max-width:767px) {
+        .item {
+            height: 250px;
+        }
+    }
+
+    @media (min-width:992px) {
+        .item {
+            height: 500px;
+        }
+    }
+}
+
+// 头部
+.header {
+    height: 56px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 15px;
+    left: 10%;
+
+    .left {
+        a {
+            height: 39px;
+            width: 200px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .right {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 640px;
+
+            font-weight: 400;
+            font-size: 16px;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    color: hsla(0, 0%, 100%, .65);
+
+                    &:hover {
+                        color: #f2b535;
+                    }
+                }
+            }
+        }
+
+        // div {
+        //     height: 50px;
+        //     width: 50px;
+        //     background-color: pink;
+        //     opacity: 0;
+        // }
+
+
+        @media (max-width:992px) {
+            ul {
+                display: inline;
+                opacity: 0;
+            }
+
+        }
+
+
+    }
+
+}
+
+// 内容
+.main {
+    .top {
+        height: 90px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .bottom {
+        padding: 0;
+
+        div {
+            height: 191px;
+            transition: all 0.5s;
+            box-shadow: #fd6a7f;
+
+            a {
+                display: block;
+                height: 95%;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-10px)
+            }
+        }
+
+
+        div:nth-of-type(1) a {
+            background-color: #70c3ff !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div:nth-of-type(2) a {
+            background-color: #fd6a7f !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div:nth-of-type(3) a {
+            background-color: #7f8ea0 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div:nth-of-type(4) a {
+            background-color: #89d04f !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    }
+}

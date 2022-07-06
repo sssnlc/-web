@@ -1,0 +1,22 @@
+.father {
+  width: 120px;
+  height: 80px;
+  width: 100px;
+  height: 1.81333333rem;
+  /*单行注释不能更新进css里*/
+  /* &表示当前选择器*/
+}
+.father .son {
+  color: aqua;
+  width: 50rem;
+}
+.father > .son2 {
+  background-color: #fff;
+  font-size: 40px;
+}
+.father:first-child {
+  color: aqua;
+}
+.father:hover {
+  background-color: antiquewhite;
+}

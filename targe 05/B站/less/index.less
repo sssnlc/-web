@@ -1,0 +1,181 @@
+@import './base.less';
+@size: 3.752vw;
+
+/*头*/
+.head {
+  width: 100vw;
+  height: (84.03/@size);
+  padding-left: (18.01/@size);
+  padding-right: (14/@size);
+  position: fixed;
+  // 设置层叠级别
+  z-index: 1;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+
+
+  .xinxi {
+    height: (44.01/@size);
+    line-height: (44.01/@size);
+    display: flex;
+    justify-content: space-between;
+
+    >i {
+      font-size: (28/@size);
+      color: #fb7299;
+    }
+
+    .geren {
+      display: flex;
+      justify-content: space-between;
+      width: (160.05/@size);
+
+      >i {
+        color: #ccc;
+        font-size: (21.6/@size);
+      }
+
+      .login>img {
+        height: (24.01/@size);
+        width: (24.01/@size);
+        border-radius: 50%;
+
+      }
+
+      .download>img {
+        height: (24/@size);
+        width: (72/@size);
+      }
+    }
+  }
+
+  .classifc {
+    height: (40.01/@size);
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .iconfont {
+      display: block;
+      width: (20/@size);
+      height: (20/@size);
+      text-align: center;
+      line-height: (20/@size);
+      color: rgb(0 0 0 0);
+      font-size: (16/@size);
+    }
+
+    ul {
+      height: 100%;
+      width: (280/@size);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        height: 100%;
+        line-height: (40.01/@size);
+      }
+
+      li:hover {
+        border-bottom: 2px solid #fb7299;
+        color: #fb7299;
+      }
+    }
+  }
+
+}
+
+
+/*主体内容*/
+
+.main {
+  padding-left: (18.01/@size);
+  padding-right: (14/@size);
+  padding-top: (100/@size);
+  margin-bottom: (70/@size);
+  overflow: hidden;
+
+  .view {
+    height: (151.09/@size);
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+      li {
+        flex: 1;
+        padding: (4.252/@size) (5.003/@size);
+        position: relative;
+
+        /*每个视频的图片*/
+        img {
+          height: (97.09/@size);
+          width: 100%;
+          border-radius: (2/@size);
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          bottom: 20px;
+
+          >span {
+            color: #fff;
+            height: (27/@size);
+            padding-left: (8/@size);
+            padding-right: (8/@size);
+            line-height: (27/@size);
+            position: relative;
+            bottom: (5/@size);
+            i {
+              font-size: (12/@size);
+
+            }
+          }
+
+        }
+
+        /*视频简介*/
+        >span {
+          width: (172.6/@size);
+          font-size: 3.2vw;
+          color: #212121;
+          margin-top: 1.6vw;
+          position: relative;
+          bottom: 20px;
+        }
+      }
+    }
+
+  }
+
+}
+
+/*尾部*/
+.footer {
+  width: (351.18/@size);
+  height: (37.42/@size);
+  margin: 0 auto;
+  line-height: 9.6vw;
+  border-radius: 6.66667vw;
+  background: #fb7299;
+  color: #fff;
+  left: 3.2vw;
+  text-align: center;
+  font-size: 3.73333vw;
+  box-shadow: 0 0.53333vw 2.66667vw rgb(0 0 0 / 20%);
+  position: fixed;
+  bottom: (37/@size);
+
+  >i {
+    font-size: (16.8/@size);
+    margin-right: (17/@size);
+  }
+}

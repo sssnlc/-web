@@ -1,0 +1,154 @@
+@shipei: 37.5rem;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  margin-bottom: (49/@shipei);
+  background-color: #000000 30%;
+
+  /*主体第一部分*/
+  .banner {
+    width: 10rem;
+    height: (160/@shipei);
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .huodong {
+    height: (41/@shipei);
+
+    p {
+      font-family: FZLTCHJW--GB1-0;
+      font-size: 14px;
+      color: #3C3C3C 100%;
+      letter-spacing: 0.01px;
+      line-height: (41/@shipei);
+      margin-left: (15/@shipei);
+      font-weight: 800;
+    }
+  }
+
+  // 活动列表
+  .active {
+    height: (160/@shipei);
+    position: relative;
+
+    img:nth-child(1) {
+      height: 100%;
+    }
+
+    >i {
+      position: absolute;
+      right: (18/@shipei);
+      top: (15/@shipei);
+      color: #FFFFFF;
+      font-size: 24px;
+    }
+
+    .jinx {
+      width: (68/@shipei);
+      height: (29/@shipei);
+      position: absolute;
+      top: (-4/@shipei);
+      left: (15/@shipei);
+
+      img:nth-child(2) {
+        background-size: contain;
+        position: relative;
+      }
+
+      i {
+        position: absolute;
+        left: (14/@shipei);
+        bottom: (10/@shipei);
+        font-size: 12px;
+        color: #FFFFFF;
+        width: (40/@shipei);
+      }
+    }
+  }
+
+  // text
+  .text {
+    height: (90/@shipei);
+    background-color: #fff;
+    position: relative;
+
+    h5 {
+      font-size: 15px;
+      width: (295/@shipei);
+      height: (43/@shipei);
+      font-family: FZLTHJW--GB1-0;
+      font-size: 15px;
+      color: #3C3C3C;
+      letter-spacing: 0.21px;
+      position: absolute;
+      left: (15/@shipei);
+      top: (8/@shipei);
+    }
+
+    span {
+      position: absolute;
+      top: (8/@shipei);
+      right: (17/@shipei);
+      font-family: FZLTHJW--GB1-0;
+      font-size: 15px;
+      color: #FE6249;
+      letter-spacing: 0.07px;
+    }
+
+    p {
+      position: absolute;
+      bottom: (12/@shipei);
+      left: (15/@shipei);
+      font-family: FZLTHJW--GB1-0;
+      font-size: 11px;
+      color: #B4B4B4;
+      letter-spacing: 0.05px;
+
+      i {
+        width: (8/@shipei);
+        height: (10/@shipei);
+      }
+
+    }
+  }
+
+}
+
+.footer {
+  height: (49/@shipei);
+  width: 100%;
+  background: #FECA49;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div {
+    height: 100%;
+    width: (24.4/@shipei);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span {
+      font-size: 11px;
+      margin-top: 5px;
+    }
+
+    &:hover {
+      color: #FEFEFE;
+    }
+  }
+
+}

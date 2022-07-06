@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/*头*/
+.head {
+  width: 100vw;
+  height: 22.39605544vw;
+  padding-left: 4.80010661vw;
+  padding-right: 3.73134328vw;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.head .xinxi {
+  height: 11.72974414vw;
+  line-height: 11.72974414vw;
+  display: flex;
+  justify-content: space-between;
+}
+.head .xinxi > i {
+  font-size: 7.46268657vw;
+  color: #fb7299;
+}
+.head .xinxi .geren {
+  display: flex;
+  justify-content: space-between;
+  width: 42.65724947vw;
+}
+.head .xinxi .geren > i {
+  color: #ccc;
+  font-size: 5.75692964vw;
+}
+.head .xinxi .geren .login > img {
+  height: 6.39925373vw;
+  width: 6.39925373vw;
+  border-radius: 50%;
+}
+.head .xinxi .geren .download > img {
+  height: 6.39658849vw;
+  width: 19.18976546vw;
+}
+.head .classifc {
+  height: 10.66364606vw;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head .classifc .iconfont {
+  display: block;
+  width: 5.33049041vw;
+  height: 5.33049041vw;
+  text-align: center;
+  line-height: 5.33049041vw;
+  color: #000000;
+  font-size: 4.26439232vw;
+}
+.head .classifc ul {
+  height: 100%;
+  width: 74.62686567vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.head .classifc ul li {
+  height: 100%;
+  line-height: 10.66364606vw;
+}
+.head .classifc ul li:hover {
+  border-bottom: 2px solid #fb7299;
+  color: #fb7299;
+}
+/*主体内容*/
+.main {
+  padding-left: 4.80010661vw;
+  padding-right: 3.73134328vw;
+  padding-top: 26.65245203vw;
+  margin-bottom: 18.65671642vw;
+  overflow: hidden;
+}
+.main .view {
+  height: 40.26918977vw;
+}
+.main .view ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .view ul li {
+  flex: 1;
+  padding: 1.13326226vw 1.33342217vw;
+  position: relative;
+  /*每个视频的图片*/
+  /*视频简介*/
+}
+.main .view ul li img {
+  height: 25.87686567vw;
+  width: 100%;
+  border-radius: 0.53304904vw;
+}
+.main .view ul li div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: 20px;
+}
+.main .view ul li div > span {
+  color: #fff;
+  height: 7.19616205vw;
+  padding-left: 2.13219616vw;
+  padding-right: 2.13219616vw;
+  line-height: 7.19616205vw;
+  position: relative;
+  bottom: 1.3326226vw;
+}
+.main .view ul li div > span i {
+  font-size: 3.19829424vw;
+}
+.main .view ul li > span {
+  width: 46.0021322vw;
+  font-size: 3.2vw;
+  color: #212121;
+  margin-top: 1.6vw;
+  position: relative;
+  bottom: 20px;
+}
+/*尾部*/
+.footer {
+  width: 93.59808102vw;
+  height: 9.97334755vw;
+  margin: 0 auto;
+  line-height: 9.6vw;
+  border-radius: 6.66667vw;
+  background: #fb7299;
+  color: #fff;
+  left: 3.2vw;
+  text-align: center;
+  font-size: 3.73333vw;
+  box-shadow: 0 0.53333vw 2.66667vw rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 9.86140725vw;
+}
+.footer > i {
+  font-size: 4.47761194vw;
+  margin-right: 4.53091684vw;
+}

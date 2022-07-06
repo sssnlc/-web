@@ -1,0 +1,10 @@
+div:first-child {
+  width: 10.66666667vw;
+  height: 3.27868852vw;
+  background-color: pink;
+}
+div:last-child {
+  width: 10.66666667vh;
+  height: 3.27868852vh;
+  background-color: skyblue;
+}

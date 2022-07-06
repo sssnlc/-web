@@ -1,0 +1,35 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    div:nth-of-type(2) {
+      background-color: pink;
+      height: 100px;
+      width: 100px;
+      display: none;
+    }
+
+    div:nth-of-type(1) {
+      background-color: skyblue;
+      height: 100px;
+      width: 100px;
+    }
+
+    div:nth-of-type(1):hover div:nth-of-type(2) {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <div></div>
+    <div></div>
+  </body>
+
+  </html>

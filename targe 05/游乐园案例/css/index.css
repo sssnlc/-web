@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  margin-bottom: 1.30666667rem;
+  background-color: #000000 30%;
+  /*主体第一部分*/
+}
+.main .banner {
+  width: 10rem;
+  height: 4.26666667rem;
+}
+.main .banner img {
+  height: 100%;
+  width: 100%;
+}
+.main .huodong {
+  height: 1.09333333rem;
+}
+.main .huodong p {
+  font-family: FZLTCHJW--GB1-0;
+  font-size: 14px;
+  color: #3C3C3C 100%;
+  letter-spacing: 0.01px;
+  line-height: 1.09333333rem;
+  margin-left: 0.4rem;
+  font-weight: 800;
+}
+.main .active {
+  height: 4.26666667rem;
+  position: relative;
+}
+.main .active img:nth-child(1) {
+  height: 100%;
+}
+.main .active > i {
+  position: absolute;
+  right: 0.48rem;
+  top: 0.4rem;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+.main .active .jinx {
+  width: 1.81333333rem;
+  height: 0.77333333rem;
+  position: absolute;
+  top: -0.10666667rem;
+  left: 0.4rem;
+}
+.main .active .jinx img:nth-child(2) {
+  background-size: contain;
+  position: relative;
+}
+.main .active .jinx i {
+  position: absolute;
+  left: 0.37333333rem;
+  bottom: 0.26666667rem;
+  font-size: 12px;
+  color: #FFFFFF;
+  width: 1.06666667rem;
+}
+.main .text {
+  height: 2.4rem;
+  background-color: #fff;
+  position: relative;
+}
+.main .text h5 {
+  width: 7.86666667rem;
+  height: 1.14666667rem;
+  font-family: FZLTHJW--GB1-0;
+  font-size: 15px;
+  color: #3C3C3C;
+  letter-spacing: 0.21px;
+  position: absolute;
+  left: 0.4rem;
+  top: 0.21333333rem;
+}
+.main .text span {
+  position: absolute;
+  top: 0.21333333rem;
+  right: 0.45333333rem;
+  font-family: FZLTHJW--GB1-0;
+  font-size: 15px;
+  color: #FE6249;
+  letter-spacing: 0.07px;
+}
+.main .text p {
+  position: absolute;
+  bottom: 0.32rem;
+  left: 0.4rem;
+  font-family: FZLTHJW--GB1-0;
+  font-size: 11px;
+  color: #B4B4B4;
+  letter-spacing: 0.05px;
+}
+.main .text p i {
+  width: 0.21333333rem;
+  height: 0.26666667rem;
+}
+.footer {
+  height: 1.30666667rem;
+  width: 100%;
+  background: #FECA49;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer div {
+  height: 100%;
+  width: 0.65066667rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer div span {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.footer div:hover {
+  color: #FEFEFE;
+}
