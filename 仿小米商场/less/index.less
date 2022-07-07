@@ -1,0 +1,699 @@
+// 定义一个小米颜色
+@XMcolor: rgb(255, 103, 0);
+
+// 版心加权重，因为book strap有默认版心了
+.container {
+  width: 1226px !important;
+  margin: 0 auto;
+}
+
+// 头部上部分
+.header-top {
+  height: 40px;
+  position: relative;
+  z-index: 30;
+  height: 40px;
+  font-size: 12px;
+  color: #b0b0b0;
+  background: #333;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // 头部上部分的左边
+    .top-left {
+      width: 800px;
+      height: 40px;
+
+      ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+
+        li {
+          height: 100%;
+          line-height: 40px;
+
+          a {
+            padding-right: 8px;
+            font-size: 12px;
+            color: #b0b0b0;
+            border-right: 0.7px solid hsl(0, 0%, 69%);
+
+            &:hover {
+              color: #fff;
+            }
+          }
+
+
+        }
+
+        //  隐藏盒子右边框
+        .yinchang {
+          border: 0;
+        }
+      }
+    }
+
+    // 头部上部分右边
+    .top-right {
+      width: 280px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        height: 100%;
+        width: 142px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+      }
+
+      .shop {
+        width: 120px;
+        height: 100%;
+        background-color: #424242;
+
+        // 购物车变色
+        &:hover {
+          background-color: #fff;
+        }
+
+        &:hover a {
+          color: @XMcolor;
+        }
+
+        a {
+          color: #b0b0b0;
+          display: flex;
+          height: 100%;
+          width: 100%;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+          }
+
+          p {
+            height: 40px;
+            line-height: 40px;
+            margin: 0;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 头部下部分
+.header-bottom {
+  height: 100px;
+  display: flex;
+
+  .icon {
+    width: 220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 56px;
+      width: 56px;
+      line-height: 56px;
+    }
+  }
+
+  .classfic {
+    flex: 1;
+    height: 100%;
+
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+
+      a {
+        color: rgb(51, 51, 51);
+
+        &:hover {
+          color: @XMcolor;
+        }
+      }
+    }
+  }
+
+  .search {
+    width: 370px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 85px;
+
+    input {
+      width: 245px;
+      height: 50px;
+      border: 1px solid #e0e0e0;
+      padding: 0;
+
+      &:focus {
+        border: 1px solid @XMcolor;
+      }
+
+      &:focus+div {
+        border: 1px solid @XMcolor;
+      }
+    }
+
+    >div {
+      height: 50px;
+      width: 50px;
+      border: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: @XMcolor;
+      }
+    }
+  }
+}
+
+
+// banner图和分类
+.banner {
+  height: 460px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+
+  >.classfic {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 234px;
+    background-color: rgba(105, 101, 101, .6);
+    // 让被图片压着的分类，三维弄出来
+    position: relative;
+    z-index: 1;
+
+    ul {
+      padding-left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      li {
+        height: 42px;
+        width: 100%;
+        line-height: 42px;
+        padding-left: 30px;
+        color: #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        svg {
+          position: absolute;
+          right: 15px;
+        }
+
+        &:hover {
+          background-color: @XMcolor;
+        }
+      }
+    }
+  }
+
+  .pic {
+    height: 100%;
+    width: 1226px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// 其他信息
+.other {
+  height: 170px;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 !important;
+
+  >.classfic {
+    height: 100%;
+    width: 234px;
+
+
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 !important;
+      margin: 0 !important;
+      background-color: #665e57;
+
+      li {
+        width: 70px;
+        height: 82px;
+        padding-left: 3px;
+        padding-right: 3px;
+        display: flex;
+        align-items: center;
+
+        &:hover a {
+          color: #fff;
+        }
+
+        a {
+          width: 100%;
+          height: 64px;
+          padding-top: 18px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: all .5s;
+          color: #b0b0b0;
+
+          img {
+            height: 24px;
+            width: 24px;
+          }
+
+          p {
+            font-size: 13px;
+
+          }
+        }
+      }
+    }
+  }
+
+  >.pic {
+    height: 100%;
+    padding-left: 12px;
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      height: 100%;
+      width: 316px;
+
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}
+
+/*主体内容*/
+.main {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  background-color: #f5f5f5;
+  width: 1519px;
+  min-height: 500px;
+
+  .container {
+    height: 100%;
+    padding: 0;
+
+    img {
+      height: 120px;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  .box-hd {
+    margin-top: 30px;
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 22px;
+      font-weight: 200;
+    }
+
+    div {
+      height: 100%;
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #424242;
+
+        svg {
+          position: relative;
+          z-index: 1;
+          border: 1px solid;
+          border-radius: 50%;
+          background-color: #b0b0b0;
+          color: #fff;
+        }
+
+        &:hover {
+          color: @XMcolor;
+        }
+
+        &:hover svg {
+          background-color: @XMcolor;
+        }
+      }
+    }
+  }
+
+  .phoneMain {
+    height: 614px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .phoneLeft {
+      height: 100%;
+      width: 234px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .phoneRight {
+      height: 100%;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 13px;
+
+        li {
+          height: 300px;
+          width: 234px;
+          background-color: #fff;
+          margin-right: 10px;
+          transition: all .3s;
+
+          &:hover {
+            transform: translateY(-2.5px);
+            box-shadow: 2px 2px 5px #b0b0b0;
+          }
+
+          a {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+              height: 160px;
+              width: 160px;
+            }
+
+            h3 {
+              font-size: 14px;
+              color: #333;
+              font-weight: 400;
+
+            }
+
+            p:nth-of-type(1) {
+              color: #b0b0b0;
+              font-size: 12px;
+            }
+
+            p:nth-of-type(2) {
+              color: @XMcolor;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*侧边固定栏*/
+.fixed {
+  width: 84px;
+  height: 92*5px;
+  position: fixed;
+  right: 0;
+  top: 20%;
+
+  ul {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+
+    li {
+      height: 92px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fff;
+      border: 1px solid rgb(245, 245, 245);
+      margin-bottom: 1px;
+
+      &:hover img:nth-of-type(1) {
+        opacity: 0;
+      }
+
+      &:hover img:nth-of-type(2) {
+        opacity: 1;
+      }
+
+      &:hover span {
+        color: @XMcolor;
+      }
+
+      div {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 12px;
+
+        img {
+          height: 30px;
+          width: 30px;
+          margin: auto 0;
+        }
+
+        img:nth-of-type(1) {
+          position: relative;
+          bottom: -30px;
+        }
+
+        img:nth-of-type(2) {
+          opacity: 0;
+        }
+      }
+
+      span {
+        color: #757575;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*尾部*/
+.footer {
+  height: 472.5px;
+  background-color: #fff;
+
+  .footerTop {
+    height: 80px;
+    border-bottom: 1px solid #b0b0b0;
+
+    ul {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+
+      li {
+        height: 100%;
+        width: 242px;
+        // background-color: pink;
+        display: flex;
+        align-items: center;
+
+        a {
+          display: block;
+          width: 100%;
+          border-right: 1px solid #b0b0b0;
+          text-align: center;
+          color: #b0b0b0;
+        }
+
+
+      }
+
+      li:last-child>a {
+        border: none;
+      }
+    }
+  }
+
+  .footerMain {
+    height: 392px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    padding-left: 160px;
+    padding-right: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+      width: 160px;
+      height: 100%;
+      // background-color: pink;
+
+      ul {
+        padding: 0;
+
+        li:first-child {
+          font-size: 14px;
+          color: #424242;
+          margin-bottom: 30px;
+        }
+
+        li {
+          font-size: 12px;
+          color: #757575;
+        }
+
+
+      }
+
+    }
+
+    // 修改倒数第二个，添加上边框和调整对齐
+    div:nth-child(5) ul {
+      width: 100px;
+      border-right: 1px solid #b0b0b0;
+    }
+
+    div:nth-child(6) {
+      position: relative;
+      left: -20px;
+
+      // 修改最后一个
+      ul {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        li {
+          margin: 3px;
+        }
+
+        li:first-child {
+          font-size: 22px;
+          line-height: 1;
+          color: @XMcolor;
+        }
+
+        li:nth-child(2) {
+          font-size: 12px;
+          color: #616161;
+          text-align: center;
+        }
+
+        li:nth-child(3) {
+          width: 100%;
+          padding-left: 18px;
+
+          a {
+            display: block;
+            text-align: center;
+            line-height: 28px;
+            color: @XMcolor;
+            height: 28px;
+            width: 118px;
+            border: 1px solid @XMcolor;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*网站信息*/
+.footerBottom {
+  height: 140px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
